@@ -8,17 +8,3 @@ const api = axios.create({
 });
 
 export default api;
-
-// export const fetchData = async () => {
-//   try {
-//     const response = await api.get("/movie/11", {
-//       params: {
-//         api_key: "44703444ffbe473cda45d83242387510",
-//         language: "pt-BR",
-//       },
-//     });
-//     return response.data;
-//   } catch (error) {
-//     throw error;
-//   }
-// };

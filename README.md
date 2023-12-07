@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Projeto React com React Router e Axios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto React é uma aplicação simples que utiliza as bibliotecas `react-router-dom` para facilitar a navegação entre páginas e `axios` para realizar chamadas à API do The Movie Database (TMDb).
 
-## Available Scripts
+## Estrutura do Projeto
 
-In the project directory, you can run:
+- **`src/components/Header.js`:** Componente de cabeçalho que pode ser incluído em todas as páginas.
+- **`src/pages/Home.js`:** Página principal que exibe uma lista dos filmes atualmente em exibição.
+- **`src/pages/Filme.js`:** Página que exibe detalhes específicos de um filme com base no ID fornecido na URL.
+- **`src/services/api.js`:** Configuração do Axios para realizar chamadas à API do TMDb.
 
-### `npm start`
+## Configuração do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Instalação de Dependências
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Certifique-se de ter o Node.js instalado em seu ambiente. Em seguida, execute o seguinte comando no terminal:
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Execução do Projeto
 
-### `npm run build`
+Após a instalação das dependências, inicie o projeto com o seguinte comando:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O aplicativo será iniciado e estará disponível em [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Como Funciona
+A página inicial (Home.js) faz uma chamada à API do TMDb para obter uma lista dos filmes atualmente em exibição.
+Cada filme é exibido como um artigo com um título, uma imagem do pôster e um link para acessar mais detalhes na página do filme (Filme.js).
+A navegação entre as páginas é gerenciada pela biblioteca react-router-dom.
+Contribuições e Melhorias
+Sinta-se à vontade para contribuir, abrir problemas ou propor melhorias para este projeto. Estamos aqui para aprender e evoluir juntos!
 
-### `npm run eject`
+### MIT
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Licença
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
