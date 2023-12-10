@@ -17,6 +17,12 @@
   width: 720px;
 }
 
+@media screen and (max-width: 800px) {
+  .meus-filmes ul {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .meus-filmes ul {
     width: 90%;
